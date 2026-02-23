@@ -20,8 +20,8 @@ int main()
     }
     sum = temp_sum;
     auto end = chrono::high_resolution_clock::now();
-    chrono::duration<double> elapsed = end - start;
+    auto elapsed = chrono::duration_cast<chrono::nanoseconds>(end - start);
     cout << "Sum: " << sum << endl;
-    cout << "Time: " << elapsed.count() << " seconds" << endl;
+    cout << "Time: " << elapsed.count()* 1e-9 << " seconds" << endl;
     return 0;
 }
