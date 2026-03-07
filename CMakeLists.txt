@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(lab1 Lab1/lab1.cpp)
 add_executable(lab1_1 Lab1/lab1_1.cpp)
+add_executable(lab2 Lab2/lab2.cpp)
 
